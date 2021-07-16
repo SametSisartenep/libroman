@@ -52,7 +52,7 @@ dectoroman(int n, char *buf, ulong len)
 			n -= decimal[i];
 		}
 	}
-	buf[len-1] = 0;
+	buf[o] = 0;
 	return 0;
 }
 

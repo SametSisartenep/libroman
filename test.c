@@ -29,7 +29,7 @@ main(int argc, char *argv[])
 	if(argc != 0)
 		usage();
 
-	if(decimal >= 0){
+	if(decimal > 0){
 		if(dectoroman(decimal, buf, sizeof buf) < 0)
 			sysfatal("dectoroman: %r");
 		print("%s\n", buf);
